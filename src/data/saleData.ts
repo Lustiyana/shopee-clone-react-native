@@ -1,0 +1,92 @@
+export const items = [
+  {
+    image: require('../assets/images/flash-sale-1.jpeg'),
+    price: 74250,
+    stock: 10,
+    sold: 2,
+  },
+  {
+    image: require('../assets/images/flash-sale-2.jpeg'),
+    price: 2099000,
+    stock: 10,
+    sold: 2,
+  },
+  {
+    image: require('../assets/images/flash-sale-3.jpeg'),
+    price: 2099000,
+    stock: 10,
+    sold: 2,
+  },
+  {
+    image: require('../assets/images/flash-sale-4.jpeg'),
+    price: 2099000,
+    stock: 10,
+    sold: 2,
+  },
+  {
+    image: require('../assets/images/flash-sale-5.jpeg'),
+    price: 2099000,
+    stock: 10,
+    sold: 2,
+  },
+  {
+    image: require('../assets/images/flash-sale-6.jpeg'),
+    price: 2099000,
+    stock: 10,
+    sold: 2,
+  },
+  {
+    image: require('../assets/images/flash-sale-7.jpeg'),
+    price: 2099000,
+    stock: 10,
+    sold: 2,
+  },
+  {
+    image: require('../assets/images/flash-sale-8.jpeg'),
+    price: 2099000,
+    stock: 10,
+    sold: 2,
+  },
+  {
+    image: require('../assets/images/flash-sale-9.jpeg'),
+    price: 2099000,
+    stock: 10,
+    sold: 2,
+  },
+  {
+    image: require('../assets/images/flash-sale-10.jpeg'),
+    price: 2099000,
+    stock: 10,
+    sold: 2,
+  },
+  {
+    image: require('../assets/images/flash-sale-11.jpeg'),
+    price: 2099000,
+    stock: 10,
+    sold: 2,
+  },
+  {
+    image: require('../assets/images/flash-sale-12.jpeg'),
+    price: 2099000,
+    stock: 10,
+    sold: 2,
+  },
+  {
+    image: require('../assets/images/flash-sale-13.jpeg'),
+    price: 2099000,
+    stock: 10,
+    sold: 2,
+  },
+  {
+    image: require('../assets/images/flash-sale-14.jpeg'),
+    price: 2099000,
+    stock: 10,
+    sold: 2,
+  },
+  {
+    image: require('../assets/images/flash-sale-15.jpeg'),
+    price: 2099000,
+    stock: 10,
+    sold: 2,
+  },
+];
