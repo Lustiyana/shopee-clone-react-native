@@ -18,7 +18,7 @@ export default function Feature() {
 const styles = StyleSheet.create({
   container: {
     paddingTop: 64,
-    paddingHorizontal: 32,
+    paddingHorizontal: 24,
     paddingBottom: 16,
     backgroundColor: 'white',
     flexDirection: 'row',

@@ -4,7 +4,6 @@ export const formatter = (amount: any, thousands = '.') => {
     const integerPart = Math.abs(Math.trunc(amount)).toString();
     let j = integerPart.length > 3 ? integerPart.length % 3 : 0;
 
-    console.log(integerPart);
     return (
       negativeSign +
       (j ? integerPart.substr(0, j) + thousands : '') +

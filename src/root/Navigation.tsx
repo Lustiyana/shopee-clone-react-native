@@ -23,7 +23,7 @@ function BottomTabNavigator() {
             Live: 'videocam',
             Video: 'play',
             Notifikasi: 'notifications',
-            Profile: 'people',
+            Profile: 'person',
           };
           return (
             <Icon

@@ -5,15 +5,17 @@ import Balance from '../components/Balance';
 import Carousel from '../components/Carousel';
 import Feature from '../components/Feature';
 import FlashSale from '../components/FlashSale';
+import ShopeeFood from '../components/ShopeeFood';
 
 function BerandaScreen() {
   return (
-    <ScrollView>
+    <ScrollView showsVerticalScrollIndicator={false}>
       <Carousel />
       <Balance />
       <Feature />
       <Ads />
       <FlashSale />
+      <ShopeeFood />
     </ScrollView>
   );
 }

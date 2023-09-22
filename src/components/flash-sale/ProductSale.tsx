@@ -9,15 +9,16 @@ import {
 } from 'react-native';
 import {items} from '../../data/saleData';
 import {formatter} from '../../utils/formatter';
-import Icon from 'react-native-vector-icons/Ionicons';
+import {stylesSection} from '../../styles/stylesSection';
+import ButtonAll from '../atoms/ButtonAll';
 
 export default function ProductSale() {
   return (
     <ScrollView horizontal style={{marginTop: 18}}>
       <View style={styles.container}>
-        {items.map((item, index) => (
-          <View key={index} style={styles.productWrapper}>
-            <Image source={item.image} style={{height: 142, width: 142}} />
+        {items.map(item => (
+          <View key={item.id} style={styles.productWrapper}>
+            <Image source={item.image} style={stylesSection.productImage} />
             <View style={styles.priceTag}>
               <Text style={styles.rpText}>Rp</Text>
               <Text style={[styles.rpText, styles.priceText]}>
@@ -37,13 +38,7 @@ export default function ProductSale() {
             </View>
           </View>
         ))}
-        <TouchableOpacity style={{alignItems: 'center', paddingHorizontal: 24}}>
-          <Icon
-            name="chevron-forward-circle-outline"
-            size={48}
-            color={'#ED4D2D'}></Icon>
-          <Text style={{color: '#ED4D2D'}}>Lihat Semua</Text>
-        </TouchableOpacity>
+        <ButtonAll />
       </View>
     </ScrollView>
   );

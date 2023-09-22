@@ -3,10 +3,11 @@ import {View, TouchableOpacity, Text, StyleSheet} from 'react-native';
 import CountdownTimer from './flash-sale/CountDown';
 import Icon from 'react-native-vector-icons/Ionicons';
 import ProductSale from './flash-sale/ProductSale';
+import {stylesSection} from '../styles/stylesSection';
 
 export default function FlashSale() {
   return (
-    <View style={styles.container}>
+    <View style={stylesSection.container}>
       <View style={styles.headerWrapper}>
         <CountdownTimer />
         <TouchableOpacity style={styles.buttonAll}>
@@ -20,11 +21,6 @@ export default function FlashSale() {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    marginTop: 16,
-    backgroundColor: 'white',
-    paddingVertical: 24,
-  },
   headerWrapper: {
     flexDirection: 'row',
     justifyContent: 'space-between',
