@@ -5,6 +5,7 @@ import Balance from '../components/Balance';
 import Carousel from '../components/Carousel';
 import Feature from '../components/Feature';
 import FlashSale from '../components/FlashSale';
+import Recomendation from '../components/Recomendation';
 import ShopeeFood from '../components/ShopeeFood';
 
 function BerandaScreen() {
@@ -16,6 +17,7 @@ function BerandaScreen() {
       <Ads />
       <FlashSale />
       <ShopeeFood />
+      <Recomendation />
     </ScrollView>
   );
 }
