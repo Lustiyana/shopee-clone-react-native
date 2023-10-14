@@ -1,11 +1,11 @@
 import React from 'react';
-import {View, Text, Image} from 'react-native';
+import {View, Text, Image, TouchableOpacity} from 'react-native';
 import {stylesSection} from '../styles/stylesSection';
 import {items} from '../data/recomendationData';
 import {formatter} from '../utils/formatter';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-export default function Recomendation() {
+export default function Recomendation({navigation}: any) {
   return (
     <View style={{marginTop: 16}}>
       <Text
@@ -29,7 +29,8 @@ export default function Recomendation() {
           alignItems: 'center',
         }}>
         {items.map(item => (
-          <View
+          <TouchableOpacity
+            onPress={() => navigation.navigate('Detail')}
             key={item.id}
             style={{backgroundColor: 'white', paddingBottom: 8}}>
             <Image source={item.image} style={{width: 196, height: 196}} />
@@ -64,7 +65,7 @@ export default function Recomendation() {
                 Rp{formatter(item.price)}
               </Text>
             </View>
-          </View>
+          </TouchableOpacity>
         ))}
       </View>
     </View>

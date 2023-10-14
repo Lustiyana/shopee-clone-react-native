@@ -8,7 +8,7 @@ import FlashSale from '../components/FlashSale';
 import Recomendation from '../components/Recomendation';
 import ShopeeFood from '../components/ShopeeFood';
 
-function BerandaScreen() {
+function BerandaScreen({navigation}: any) {
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
       <Carousel />
@@ -17,7 +17,7 @@ function BerandaScreen() {
       <Ads />
       <FlashSale />
       <ShopeeFood />
-      <Recomendation />
+      <Recomendation navigation={navigation} />
     </ScrollView>
   );
 }

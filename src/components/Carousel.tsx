@@ -21,7 +21,7 @@ const Carousel = () => {
     return () => clearInterval(interval);
   }, [currentIndex, items.length]);
 
-  const handleScroll = event => {
+  const handleScroll = (event: any) => {
     const contentOffset = event.nativeEvent.contentOffset;
     const index = Math.round(contentOffset.x / width);
     setCurrentIndex(index);
